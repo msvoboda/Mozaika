@@ -1,0 +1,85 @@
+object OptionForm: TOptionForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 335
+  ClientWidth = 598
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 598
+  DesignerHeight = 360
+  DesignerDeviceName = 'Google Nexus 5'
+  DesignerOrientation = 3
+  DesignerOSVersion = ''
+  object Button1: TButton
+    Height = 44.000000000000000000
+    Position.X = 472.000000000000000000
+    Position.Y = 288.000000000000000000
+    TabOrder = 3
+    Text = 'Close'
+    Width = 121.000000000000000000
+    OnClick = Button1Click
+  end
+  object LabelName: TLabel
+    Height = 23.000000000000000000
+    Position.X = 11.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Name:'
+    Width = 82.000000000000000000
+  end
+  object EditName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Text = 'Picture'
+    Position.X = 8.000000000000000000
+    Position.Y = 32.000000000000000000
+    Width = 441.000000000000000000
+    Height = 32.000000000000000000
+  end
+  object ListBox: TListBox
+    Height = 257.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 72.000000000000000000
+    TabOrder = 6
+    Width = 441.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object ButtonSave: TButton
+    Height = 44.000000000000000000
+    Position.X = 472.000000000000000000
+    Position.Y = 244.000000000000000000
+    TabOrder = 2
+    Text = 'Save'
+    Width = 121.000000000000000000
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Height = 44.000000000000000000
+    Position.X = 472.000000000000000000
+    Position.Y = 201.000000000000000000
+    TabOrder = 1
+    Text = 'Save'
+    Width = 121.000000000000000000
+    OnClick = Button1Click
+  end
+  object SQLConnection: TSQLConnection
+    DriverName = 'Sqlite'
+    Params.Strings = (
+      'DriverName=SQLite'
+      'DriverUnit=Data.DbxSqlite'
+      
+        'DriverPackageLoader=TDBXSqliteDriverLoader,DBXSqliteDriver200.bp' +
+        'l'
+      
+        'MetaDataPackageLoader=TDBXSqliteMetaDataCommandFactory,DbxSqlite' +
+        'Driver200.bpl'
+      'FailIfMissing=True'
+      'Database=C:\tempprojects\pictures.s3db')
+    Left = 536
+    Top = 16
+  end
+end
