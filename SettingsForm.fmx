@@ -17,7 +17,7 @@ object OptionForm: TOptionForm
     Height = 44.000000000000000000
     Position.X = 472.000000000000000000
     Position.Y = 288.000000000000000000
-    TabOrder = 3
+    TabOrder = 2
     Text = 'Close'
     Width = 121.000000000000000000
     OnClick = Button1Click
@@ -31,7 +31,7 @@ object OptionForm: TOptionForm
   end
   object EditName: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 5
+    TabOrder = 4
     Text = 'Picture'
     Position.X = 8.000000000000000000
     Position.Y = 32.000000000000000000
@@ -42,7 +42,7 @@ object OptionForm: TOptionForm
     Height = 257.000000000000000000
     Position.X = 8.000000000000000000
     Position.Y = 72.000000000000000000
-    TabOrder = 6
+    TabOrder = 5
     Width = 441.000000000000000000
     DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
     DefaultItemStyles.GroupHeaderStyle = ''
@@ -52,24 +52,17 @@ object OptionForm: TOptionForm
     Height = 44.000000000000000000
     Position.X = 472.000000000000000000
     Position.Y = 244.000000000000000000
-    TabOrder = 2
-    Text = 'Save'
-    Width = 121.000000000000000000
-    OnClick = Button1Click
-  end
-  object Button2: TButton
-    Height = 44.000000000000000000
-    Position.X = 472.000000000000000000
-    Position.Y = 201.000000000000000000
     TabOrder = 1
     Text = 'Save'
     Width = 121.000000000000000000
     OnClick = Button1Click
   end
   object SQLConnection: TSQLConnection
+    ConnectionName = 'dbmozaika'
     DriverName = 'Sqlite'
+    LoginPrompt = False
     Params.Strings = (
-      'DriverName=SQLite'
+      'DriverName=Sqlite'
       'DriverUnit=Data.DbxSqlite'
       
         'DriverPackageLoader=TDBXSqliteDriverLoader,DBXSqliteDriver200.bp' +
@@ -77,9 +70,24 @@ object OptionForm: TOptionForm
       
         'MetaDataPackageLoader=TDBXSqliteMetaDataCommandFactory,DbxSqlite' +
         'Driver200.bpl'
-      'FailIfMissing=True'
-      'Database=C:\tempprojects\pictures.s3db')
+      'FailIfMissing=True')
+    Connected = True
     Left = 536
     Top = 16
+  end
+  object SQLTable: TSQLTable
+    MaxBlobSize = -1
+    SQLConnection = SQLConnection
+    Left = 536
+    Top = 64
+  end
+  object SQLQuery: TSQLQuery
+    MaxBlobSize = -1
+    Params = <>
+    SQL.Strings = (
+      'select * from pictures;')
+    SQLConnection = SQLConnection
+    Left = 536
+    Top = 120
   end
 end

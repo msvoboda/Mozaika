@@ -14,6 +14,7 @@
 #include <Data.DB.hpp>
 #include <Data.DbxSqlite.hpp>
 #include <Data.SqlExpr.hpp>
+#include <Data.FMTBcd.hpp>
 //---------------------------------------------------------------------------
 class TOptionForm : public TForm
 {
@@ -23,8 +24,9 @@ __published:	// IDE-managed Components
 	TEdit *EditName;
 	TListBox *ListBox;
 	TButton *ButtonSave;
-	TButton *Button2;
 	TSQLConnection *SQLConnection;
+	TSQLTable *SQLTable;
+	TSQLQuery *SQLQuery;
 	void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 	TList *_array;
