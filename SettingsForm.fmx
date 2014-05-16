@@ -7,6 +7,7 @@ object OptionForm: TOptionForm
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnShow = FormShow
   DesignerMobile = True
   DesignerWidth = 598
   DesignerHeight = 360
@@ -17,21 +18,22 @@ object OptionForm: TOptionForm
     Height = 44.000000000000000000
     Position.X = 472.000000000000000000
     Position.Y = 288.000000000000000000
-    TabOrder = 2
+    TabOrder = 3
     Text = 'Close'
     Width = 121.000000000000000000
     OnClick = Button1Click
   end
   object LabelName: TLabel
+    Anchors = [akLeft, akTop, akRight]
     Height = 23.000000000000000000
     Position.X = 11.000000000000000000
     Position.Y = 8.000000000000000000
-    Text = 'Name:'
-    Width = 82.000000000000000000
+    Text = 'Name'
+    Width = 566.000000000000000000
   end
   object EditName: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 4
+    TabOrder = 5
     Text = 'Picture'
     Position.X = 8.000000000000000000
     Position.Y = 32.000000000000000000
@@ -42,7 +44,7 @@ object OptionForm: TOptionForm
     Height = 257.000000000000000000
     Position.X = 8.000000000000000000
     Position.Y = 72.000000000000000000
-    TabOrder = 5
+    TabOrder = 6
     Width = 441.000000000000000000
     DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
     DefaultItemStyles.GroupHeaderStyle = ''
@@ -52,12 +54,22 @@ object OptionForm: TOptionForm
     Height = 44.000000000000000000
     Position.X = 472.000000000000000000
     Position.Y = 244.000000000000000000
-    TabOrder = 1
+    TabOrder = 2
     Text = 'Save'
     Width = 121.000000000000000000
-    OnClick = Button1Click
+    OnClick = ButtonSaveClick
   end
-  object SQLConnection: TSQLConnection
+  object ButtonOpen: TButton
+    Enabled = False
+    Height = 44.000000000000000000
+    Position.X = 472.000000000000000000
+    Position.Y = 202.000000000000000000
+    TabOrder = 1
+    Text = 'Open'
+    Width = 121.000000000000000000
+    OnClick = ButtonOpenClick
+  end
+  object DbmozaikaConnection: TSQLConnection
     ConnectionName = 'dbmozaika'
     DriverName = 'Sqlite'
     LoginPrompt = False
@@ -71,23 +83,35 @@ object OptionForm: TOptionForm
         'MetaDataPackageLoader=TDBXSqliteMetaDataCommandFactory,DbxSqlite' +
         'Driver200.bpl'
       'FailIfMissing=True')
+    TableScope = [tsTable]
+    AfterConnect = DbmozaikaConnectionAfterConnect
     Connected = True
-    Left = 536
-    Top = 16
+    Left = 511
+    Top = 33
   end
-  object SQLTable: TSQLTable
+  object PicturesTable: TSQLDataSet
+    CommandText = 'pictures'
+    CommandType = ctTable
+    DbxCommandType = 'Dbx.Table'
     MaxBlobSize = -1
-    SQLConnection = SQLConnection
-    Left = 536
-    Top = 64
+    ParamCheck = False
+    Params = <>
+    SQLConnection = DbmozaikaConnection
+    Left = 511
+    Top = 97
   end
-  object SQLQuery: TSQLQuery
+  object SQLCreate: TSQLQuery
     MaxBlobSize = -1
     Params = <>
-    SQL.Strings = (
-      'select * from pictures;')
-    SQLConnection = SQLConnection
+    SQLConnection = DbmozaikaConnection
+    Left = 472
+    Top = 152
+  end
+  object SQLInsert: TSQLQuery
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = DbmozaikaConnection
     Left = 536
-    Top = 120
+    Top = 152
   end
 end

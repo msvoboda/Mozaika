@@ -8,8 +8,8 @@
 #include <System.StartUpCopy.hpp>
 #include <FMX.MobilePreview.hpp>
 //---------------------------------------------------------------------------
-USEFORM("MainForm.cpp", MozaikaForm);
 USEFORM("SettingsForm.cpp", OptionForm);
+USEFORM("MainForm.cpp", MozaikaForm);
 //---------------------------------------------------------------------------
 extern "C" int FMXmain()
 {

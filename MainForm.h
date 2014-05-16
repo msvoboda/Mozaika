@@ -124,9 +124,11 @@ __published:	// IDE-managed Components
 	void __fastcall Rectangle1Click(TObject *Sender);
 	void __fastcall ButtonNewClick(TObject *Sender);
 	void __fastcall ButtonSettingsClick(TObject *Sender);
+	void __fastcall Rectangle1MouseEnter(TObject *Sender);
 
 private:	// User declarations
 	TList *array;
+        TList *tool_array;
         TShape *select;
 
 public:		// User declarations

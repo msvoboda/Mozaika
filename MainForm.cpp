@@ -14,6 +14,7 @@ __fastcall TMozaikaForm::TMozaikaForm(TComponent* Owner)
 	: TForm(Owner)
 {
 	array = new TList();
+        tool_array = new TList();
 }
 //---------------------------------------------------------------------------
 void TMozaikaForm::BuildGrid()
@@ -29,6 +30,8 @@ void TMozaikaForm::BuildGrid()
         TShape* sh = (TShape*)GridMozaika->Children->Items[i];
         array->Add(sh);
     }
+
+    tool_array->Add();
     /*
     for(int i = 0; i < 64;i++)
     {
@@ -73,6 +76,7 @@ void __fastcall TMozaikaForm::Rectangle1Click(TObject *Sender)
 	if (select != NULL)
         {
           click->Fill = select->Fill;
+          click->Tag = select->Tag;
         }
 }
 //---------------------------------------------------------------------------
@@ -84,6 +88,7 @@ void __fastcall TMozaikaForm::ButtonNewClick(TObject *Sender)
     {
         TShape* sh = (TShape*)GridMozaika->Children->Items[i];
         sh->Fill = RectangleWhite->Fill;
+        sh->Tag = (NativeInt)0;
         //array->Add(sh);
     }
 }
@@ -92,7 +97,21 @@ void __fastcall TMozaikaForm::ButtonNewClick(TObject *Sender)
 
 void __fastcall TMozaikaForm::ButtonSettingsClick(TObject *Sender)
 {
+	OptionForm->setPicture(array);
+        OptionForm->setPicture(tool_array);
         OptionForm->Show();
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TMozaikaForm::Rectangle1MouseEnter(TObject *Sender)
+{
+    	TShape *click = (TShape*)Sender;
+	if (select != NULL)
+        {
+          click->Fill = select->Fill;
+          click->Tag = select->Tag;
+        }
 }
 //---------------------------------------------------------------------------
 

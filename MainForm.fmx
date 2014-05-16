@@ -36,6 +36,7 @@ object MozaikaForm: TMozaikaForm
         Height = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle2: TRectangle
         Fill.Color = claAliceblue
@@ -43,6 +44,7 @@ object MozaikaForm: TMozaikaForm
         Position.X = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle6: TRectangle
         Fill.Color = claAliceblue
@@ -50,6 +52,7 @@ object MozaikaForm: TMozaikaForm
         Position.X = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle7: TRectangle
         Fill.Color = claAliceblue
@@ -57,6 +60,7 @@ object MozaikaForm: TMozaikaForm
         Position.X = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle8: TRectangle
         Fill.Color = claAliceblue
@@ -64,6 +68,7 @@ object MozaikaForm: TMozaikaForm
         Position.X = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle9: TRectangle
         Fill.Color = claAliceblue
@@ -71,6 +76,7 @@ object MozaikaForm: TMozaikaForm
         Position.X = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle10: TRectangle
         Fill.Color = claAliceblue
@@ -78,6 +84,7 @@ object MozaikaForm: TMozaikaForm
         Position.X = 252.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle11: TRectangle
         Fill.Color = claAliceblue
@@ -85,6 +92,7 @@ object MozaikaForm: TMozaikaForm
         Position.X = 294.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle12: TRectangle
         Fill.Color = claAliceblue
@@ -92,6 +100,7 @@ object MozaikaForm: TMozaikaForm
         Position.X = 336.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle13: TRectangle
         Fill.Color = claAliceblue
@@ -99,6 +108,7 @@ object MozaikaForm: TMozaikaForm
         Position.X = 378.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle14: TRectangle
         Fill.Color = claAliceblue
@@ -106,6 +116,7 @@ object MozaikaForm: TMozaikaForm
         Position.X = 420.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle15: TRectangle
         Fill.Color = claAliceblue
@@ -113,6 +124,7 @@ object MozaikaForm: TMozaikaForm
         Position.X = 462.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle16: TRectangle
         Fill.Color = claAliceblue
@@ -120,6 +132,7 @@ object MozaikaForm: TMozaikaForm
         Position.X = 504.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle17: TRectangle
         Fill.Color = claAliceblue
@@ -127,6 +140,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle18: TRectangle
         Fill.Color = claAliceblue
@@ -135,6 +149,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle19: TRectangle
         Fill.Color = claAliceblue
@@ -143,6 +158,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle20: TRectangle
         Fill.Color = claAliceblue
@@ -151,6 +167,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle21: TRectangle
         Fill.Color = claAliceblue
@@ -159,6 +176,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle22: TRectangle
         Fill.Color = claAliceblue
@@ -167,6 +185,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle23: TRectangle
         Fill.Color = claAliceblue
@@ -175,6 +194,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle24: TRectangle
         Fill.Color = claAliceblue
@@ -183,6 +203,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle25: TRectangle
         Fill.Color = claAliceblue
@@ -191,6 +212,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle26: TRectangle
         Fill.Color = claAliceblue
@@ -199,6 +221,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle27: TRectangle
         Fill.Color = claAliceblue
@@ -207,6 +230,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle28: TRectangle
         Fill.Color = claAliceblue
@@ -215,6 +239,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle29: TRectangle
         Fill.Color = claAliceblue
@@ -223,6 +248,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 42.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle30: TRectangle
         Fill.Color = claAliceblue
@@ -230,6 +256,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle31: TRectangle
         Fill.Color = claAliceblue
@@ -238,6 +265,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle32: TRectangle
         Fill.Color = claAliceblue
@@ -246,6 +274,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle33: TRectangle
         Fill.Color = claAliceblue
@@ -254,6 +283,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle34: TRectangle
         Fill.Color = claAliceblue
@@ -262,6 +292,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle35: TRectangle
         Fill.Color = claAliceblue
@@ -270,6 +301,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle36: TRectangle
         Fill.Color = claAliceblue
@@ -278,6 +310,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle37: TRectangle
         Fill.Color = claAliceblue
@@ -286,6 +319,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle38: TRectangle
         Fill.Color = claAliceblue
@@ -294,6 +328,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle39: TRectangle
         Fill.Color = claAliceblue
@@ -302,6 +337,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle40: TRectangle
         Fill.Color = claAliceblue
@@ -310,6 +346,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle41: TRectangle
         Fill.Color = claAliceblue
@@ -318,6 +355,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle42: TRectangle
         Fill.Color = claAliceblue
@@ -326,6 +364,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 84.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle43: TRectangle
         Fill.Color = claAliceblue
@@ -333,6 +372,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle44: TRectangle
         Fill.Color = claAliceblue
@@ -341,6 +381,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle45: TRectangle
         Fill.Color = claAliceblue
@@ -349,6 +390,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle46: TRectangle
         Fill.Color = claAliceblue
@@ -357,6 +399,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle47: TRectangle
         Fill.Color = claAliceblue
@@ -365,6 +408,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle48: TRectangle
         Fill.Color = claAliceblue
@@ -373,6 +417,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle49: TRectangle
         Fill.Color = claAliceblue
@@ -381,6 +426,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle50: TRectangle
         Fill.Color = claAliceblue
@@ -389,6 +435,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle51: TRectangle
         Fill.Color = claAliceblue
@@ -397,6 +444,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle52: TRectangle
         Fill.Color = claAliceblue
@@ -405,6 +453,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle53: TRectangle
         Fill.Color = claAliceblue
@@ -413,6 +462,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle54: TRectangle
         Fill.Color = claAliceblue
@@ -421,6 +471,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle55: TRectangle
         Fill.Color = claAliceblue
@@ -429,6 +480,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 126.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle56: TRectangle
         Fill.Color = claAliceblue
@@ -436,6 +488,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle57: TRectangle
         Fill.Color = claAliceblue
@@ -444,6 +497,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle58: TRectangle
         Fill.Color = claAliceblue
@@ -452,6 +506,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle59: TRectangle
         Fill.Color = claAliceblue
@@ -460,6 +515,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle60: TRectangle
         Fill.Color = claAliceblue
@@ -468,6 +524,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle61: TRectangle
         Fill.Color = claAliceblue
@@ -476,6 +533,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle62: TRectangle
         Fill.Color = claAliceblue
@@ -484,6 +542,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle63: TRectangle
         Fill.Color = claAliceblue
@@ -492,6 +551,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle64: TRectangle
         Fill.Color = claAliceblue
@@ -500,6 +560,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle65: TRectangle
         Fill.Color = claAliceblue
@@ -508,6 +569,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle66: TRectangle
         Fill.Color = claAliceblue
@@ -516,6 +578,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle67: TRectangle
         Fill.Color = claAliceblue
@@ -524,6 +587,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle68: TRectangle
         Fill.Color = claAliceblue
@@ -532,6 +596,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 168.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle69: TRectangle
         Fill.Color = claAliceblue
@@ -539,6 +604,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle70: TRectangle
         Fill.Color = claAliceblue
@@ -547,6 +613,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle71: TRectangle
         Fill.Color = claAliceblue
@@ -555,6 +622,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle72: TRectangle
         Fill.Color = claAliceblue
@@ -563,6 +631,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle73: TRectangle
         Fill.Color = claAliceblue
@@ -571,6 +640,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle74: TRectangle
         Fill.Color = claAliceblue
@@ -579,6 +649,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle75: TRectangle
         Fill.Color = claAliceblue
@@ -587,6 +658,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle76: TRectangle
         Fill.Color = claAliceblue
@@ -595,6 +667,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle77: TRectangle
         Fill.Color = claAliceblue
@@ -603,6 +676,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle78: TRectangle
         Fill.Color = claAliceblue
@@ -611,6 +685,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle79: TRectangle
         Fill.Color = claAliceblue
@@ -619,6 +694,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
       object Rectangle80: TRectangle
         Fill.Color = claAliceblue
@@ -627,6 +703,7 @@ object MozaikaForm: TMozaikaForm
         Position.Y = 210.000000000000000000
         Width = 42.000000000000000000
         OnClick = Rectangle1Click
+        OnMouseEnter = Rectangle1MouseEnter
       end
     end
     object PanelLeft: TPanel
@@ -648,6 +725,7 @@ object MozaikaForm: TMozaikaForm
         Width = 40.000000000000000000
         TabOrder = 1
         object RectangleRed: TRectangle
+          Tag = 6
           Fill.Kind = Gradient
           Fill.Gradient.Points = <
             item
@@ -693,6 +771,7 @@ object MozaikaForm: TMozaikaForm
           end
         end
         object RectangleGreen: TRectangle
+          Tag = 5
           Fill.Kind = Gradient
           Fill.Gradient.Points = <
             item
@@ -738,6 +817,7 @@ object MozaikaForm: TMozaikaForm
           end
         end
         object RectangleBlue: TRectangle
+          Tag = 4
           Fill.Kind = Gradient
           Fill.Gradient.Points = <
             item
@@ -783,6 +863,7 @@ object MozaikaForm: TMozaikaForm
           end
         end
         object RectangleYellow: TRectangle
+          Tag = 3
           Fill.Kind = Gradient
           Fill.Gradient.Points = <
             item
@@ -828,6 +909,7 @@ object MozaikaForm: TMozaikaForm
           end
         end
         object RectangleBrown: TRectangle
+          Tag = 2
           Fill.Kind = Gradient
           Fill.Gradient.Points = <
             item
@@ -873,6 +955,7 @@ object MozaikaForm: TMozaikaForm
           end
         end
         object RectangleBlack: TRectangle
+          Tag = 1
           Fill.Kind = Gradient
           Fill.Gradient.Points = <
             item
