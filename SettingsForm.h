@@ -12,8 +12,6 @@
 #include <FMX.Layouts.hpp>
 #include <FMX.ListBox.hpp>
 #include <Data.DB.hpp>
-#include <Data.DbxSqlite.hpp>
-#include <Data.SqlExpr.hpp>
 #include <Data.FMTBcd.hpp>
 
 #include "MozaikaClass.h"
@@ -26,16 +24,14 @@ __published:	// IDE-managed Components
 	TEdit *EditName;
 	TListBox *ListBox;
 	TButton *ButtonSave;
-	TSQLConnection *DbmozaikaConnection;
-	TSQLDataSet *PicturesTable;
-	TSQLQuery *SQLCreate;
-	TSQLQuery *SQLInsert;
 	TButton *ButtonOpen;
+	TButton *Button2;
 	void __fastcall Button1Click(TObject *Sender);
 	void __fastcall DbmozaikaConnectionAfterConnect(TObject *Sender);
 	void __fastcall ButtonSaveClick(TObject *Sender);
 	void __fastcall FormShow(TObject *Sender);
 	void __fastcall ButtonOpenClick(TObject *Sender);
+	void __fastcall Button2Click(TObject *Sender);
 private:	// User declarations
 	TList *_array;
         TList *_load_array;

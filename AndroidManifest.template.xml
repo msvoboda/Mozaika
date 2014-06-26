@@ -12,7 +12,7 @@
         android:restoreAnyVersion="%restoreAnyVersion%" 
         android:label="%label%" 
         android:installLocation="%installLocation%" 
-        android:debuggable="%debuggable%" 
+        android:debuggable="False"
         android:largeHeap="%largeHeap%"
         android:icon="%icon%"
         android:theme="%theme%"

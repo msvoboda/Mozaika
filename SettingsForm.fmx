@@ -18,7 +18,7 @@ object OptionForm: TOptionForm
     Height = 44.000000000000000000
     Position.X = 472.000000000000000000
     Position.Y = 288.000000000000000000
-    TabOrder = 3
+    TabOrder = 4
     Text = 'Close'
     Width = 121.000000000000000000
     OnClick = Button1Click
@@ -33,7 +33,7 @@ object OptionForm: TOptionForm
   end
   object EditName: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
-    TabOrder = 5
+    TabOrder = 6
     Text = 'Picture'
     Position.X = 8.000000000000000000
     Position.Y = 32.000000000000000000
@@ -44,7 +44,7 @@ object OptionForm: TOptionForm
     Height = 257.000000000000000000
     Position.X = 8.000000000000000000
     Position.Y = 72.000000000000000000
-    TabOrder = 6
+    TabOrder = 7
     Width = 441.000000000000000000
     DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
     DefaultItemStyles.GroupHeaderStyle = ''
@@ -53,7 +53,7 @@ object OptionForm: TOptionForm
   object ButtonSave: TButton
     Height = 44.000000000000000000
     Position.X = 472.000000000000000000
-    Position.Y = 244.000000000000000000
+    Position.Y = 49.000000000000000000
     TabOrder = 2
     Text = 'Save'
     Width = 121.000000000000000000
@@ -63,55 +63,19 @@ object OptionForm: TOptionForm
     Enabled = False
     Height = 44.000000000000000000
     Position.X = 472.000000000000000000
-    Position.Y = 202.000000000000000000
+    Position.Y = 7.000000000000000000
     TabOrder = 1
     Text = 'Open'
     Width = 121.000000000000000000
     OnClick = ButtonOpenClick
   end
-  object DbmozaikaConnection: TSQLConnection
-    ConnectionName = 'dbmozaika'
-    DriverName = 'Sqlite'
-    LoginPrompt = False
-    Params.Strings = (
-      'DriverName=Sqlite'
-      'DriverUnit=Data.DbxSqlite'
-      
-        'DriverPackageLoader=TDBXSqliteDriverLoader,DBXSqliteDriver200.bp' +
-        'l'
-      
-        'MetaDataPackageLoader=TDBXSqliteMetaDataCommandFactory,DbxSqlite' +
-        'Driver200.bpl'
-      'FailIfMissing=True')
-    TableScope = [tsTable]
-    AfterConnect = DbmozaikaConnectionAfterConnect
-    Connected = True
-    Left = 511
-    Top = 33
-  end
-  object PicturesTable: TSQLDataSet
-    CommandText = 'pictures'
-    CommandType = ctTable
-    DbxCommandType = 'Dbx.Table'
-    MaxBlobSize = -1
-    ParamCheck = False
-    Params = <>
-    SQLConnection = DbmozaikaConnection
-    Left = 511
-    Top = 97
-  end
-  object SQLCreate: TSQLQuery
-    MaxBlobSize = -1
-    Params = <>
-    SQLConnection = DbmozaikaConnection
-    Left = 472
-    Top = 152
-  end
-  object SQLInsert: TSQLQuery
-    MaxBlobSize = -1
-    Params = <>
-    SQLConnection = DbmozaikaConnection
-    Left = 536
-    Top = 152
+  object Button2: TButton
+    Height = 44.000000000000000000
+    Position.X = 472.000000000000000000
+    Position.Y = 239.000000000000000000
+    TabOrder = 3
+    Text = 'Delete'
+    Width = 121.000000000000000000
+    OnClick = Button2Click
   end
 end

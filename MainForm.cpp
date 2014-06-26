@@ -9,29 +9,46 @@
 #pragma package(smart_init)
 #pragma resource "*.fmx"
 TMozaikaForm *MozaikaForm;
+
+const int rows=8;
+const int columns=15;
+const int colors=5;
+
 //---------------------------------------------------------------------------
 __fastcall TMozaikaForm::TMozaikaForm(TComponent* Owner)
 	: TForm(Owner)
 {
 	array = new TList();
-        tool_array = new TList();
+		tool_array = new TList();
 }
 //---------------------------------------------------------------------------
 void TMozaikaForm::BuildGrid()
 {
-    float wjeden=(float)GridMozaika->Width/(float)11;
-    float hjeden=(float)GridMozaika->Height/(float)7;
-    ///
-    GridMozaika->ItemHeight = hjeden;
-    GridMozaika->ItemWidth = wjeden;
+	float jeden = (GridTool->Height-14)/7;
+        GridTool->ItemHeight = jeden;
+        GridTool->ItemWidth = jeden;
 
-    for(int i = 0; i <GridMozaika->ChildrenCount;i++)
-    {
+	float wjeden=(float)(GridMozaika->Width-columns)/(float)columns;
+	float hjeden=(float)(GridMozaika->Height-rows)/(float)rows;
+	///
+	GridMozaika->ItemHeight = hjeden;
+	GridMozaika->ItemWidth =  wjeden;
+
+	int tools_h = (PanelMain->Height/colors);
+
+	for(int i = 0; i <GridMozaika->ChildrenCount;i++)
+	{
         TShape* sh = (TShape*)GridMozaika->Children->Items[i];
         array->Add(sh);
     }
 
-    tool_array->Add();
+    tool_array->Add(RectangleWhite);
+    tool_array->Add(RectangleBlack);
+    tool_array->Add(RectangleBrown);
+    tool_array->Add(RectangleYellow);
+    tool_array->Add(RectangleBlue);
+    tool_array->Add(RectangleGreen);
+    tool_array->Add(RectangleRed);
     /*
     for(int i = 0; i < 64;i++)
     {
@@ -98,7 +115,7 @@ void __fastcall TMozaikaForm::ButtonNewClick(TObject *Sender)
 void __fastcall TMozaikaForm::ButtonSettingsClick(TObject *Sender)
 {
 	OptionForm->setPicture(array);
-        OptionForm->setPicture(tool_array);
+        OptionForm->setTool(tool_array);
         OptionForm->Show();
 }
 //---------------------------------------------------------------------------

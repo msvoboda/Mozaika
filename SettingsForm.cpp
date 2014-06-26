@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "SettingsForm.h"
+#include "MainForm.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.fmx"
@@ -39,12 +40,12 @@ void TOptionForm::setTool(TList *load_array)
 
 void __fastcall TOptionForm::DbmozaikaConnectionAfterConnect(TObject *Sender)
 {
-
+        /*
 	SQLCreate->CommandText = "CREATE TABLE IF NOT EXISTS pictures ( id INTEGER PRIMARY KEY, name VARCHAR( 60 ), data VARCHAR( 77 ));";
         int rec = SQLCreate->ExecSQL(true);
 	if (rec > 0) {
 
-	}
+	}  */
 }
 //---------------------------------------------------------------------------
 
@@ -102,29 +103,6 @@ void __fastcall TOptionForm::Refresh(){
       ButtonOpen->Enabled = true;
   }
 
-    /*
-    //SQLQuery->CommandText = "select * from pictures;";
-    try
-    {
-        PicturesTable->Open();
-        PicturesTable->Refresh();
-        PicturesTable->First();
-        do
-        {
-                UnicodeString name = PicturesTable->FieldByName("name")->AsString;
-                UnicodeString data = PicturesTable->FieldByName("data")->AsString;
-                TMozaikaPicture *pict = new TMozaikaPicture();
-                pict->name = name;
-                pict->data = data;
-                ListBox->Items->AddObject(name,(TObject*)pict);
-                PicturesTable->Next();
-        }
-        while(PicturesTable->Eof==false);
-    }
-    __finally
-    {
-    	PicturesTable->Close();
-    }*/
 }
 //---------------------------------------------------------------------------
 
@@ -137,6 +115,8 @@ void __fastcall TOptionForm::FormShow(TObject *Sender)
 
 void __fastcall TOptionForm::ButtonOpenClick(TObject *Sender)
 {
+  MozaikaForm->ButtonNewClick(Sender);
+
   int sel_idx = ListBox->ItemIndex;
  if (sel_idx != -1) {
    TStringList *data = new TStringList();
@@ -145,19 +125,40 @@ void __fastcall TOptionForm::ButtonOpenClick(TObject *Sender)
    {
       LabelName->Text=data->Strings[0];
       UnicodeString line = data->Strings[1];
-      for(int i = 1; i <= line.Length();i++)
+      for(int i = 0; i <= line.Length();i++)
       {
       	 UnicodeString znak = line[i];
          int val = znak.ToInt();
-         TShape *sh = (TShape*)_array->Items[i];
-         TShape *tool = (TShape*)_load_array->Items[val];
-         sh->Fill = tool->Fill;
+         try
+         {
+             TShape *sh = (TShape*)_array->Items[i];
+             TShape *tool = (TShape*)_load_array->Items[val];
+             sh->Fill = tool->Fill;
+         }
+         catch(...)
+         {
+
+         }
       }
    }
    catch(...)
    {
 
    }
+ }
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TOptionForm::Button2Click(TObject *Sender)
+{
+ int sel_idx = ListBox->ItemIndex;
+ if (sel_idx != -1) {
+     bool ret = System::Sysutils::DeleteFile(_path+ListBox->Items->Strings[sel_idx]);
+     if (ret == true)
+     {
+ 	Refresh();
+     }
  }
 }
 //---------------------------------------------------------------------------
