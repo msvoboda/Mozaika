@@ -118,7 +118,7 @@ __published:	// IDE-managed Components
 	TRectangle *RectangleWhite;
 	TGradientAnimation *GradientAnimation7;
 	TButton *ButtonSettings;
-	TButton *Button2;
+	TButton *ButtonNew;
 	TRectangle *Rectangle81;
 	TRectangle *Rectangle82;
 	TRectangle *Rectangle83;

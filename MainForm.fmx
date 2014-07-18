@@ -1438,7 +1438,7 @@ object MozaikaForm: TMozaikaForm
       TextSettings.Font.Style = [fsBold]
       TextSettings.FontColor = claCrimson
       Text = 'Mozaika pro d'#283'ti'
-      Width = 410.000000000000000000
+      Width = 460.000000000000000000
     end
     object Rectangle3: TRectangle
       Fill.Color = claCrimson
@@ -1463,20 +1463,22 @@ object MozaikaForm: TMozaikaForm
     end
     object ButtonSettings: TButton
       Align = Right
-      Height = 41.000000000000000000
-      Position.X = 452.000000000000000000
+      Height = 48.000000000000000000
+      Position.X = 502.000000000000000000
+      StyleLookup = 'organizetoolbutton'
       TabOrder = 2
       Text = '...'
-      Width = 73.000000000000000000
+      Width = 48.000000000000000000
       OnClick = ButtonSettingsClick
     end
-    object Button2: TButton
+    object ButtonNew: TButton
       Align = Right
-      Height = 41.000000000000000000
-      Position.X = 525.000000000000000000
+      Height = 48.000000000000000000
+      Position.X = 550.000000000000000000
+      StyleLookup = 'additembutton'
       TabOrder = 1
       Text = 'New'
-      Width = 73.000000000000000000
+      Width = 48.000000000000000000
       OnClick = ButtonNewClick
     end
   end

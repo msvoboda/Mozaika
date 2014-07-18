@@ -24,22 +24,23 @@ __fastcall TMozaikaForm::TMozaikaForm(TComponent* Owner)
 //---------------------------------------------------------------------------
 void TMozaikaForm::BuildGrid()
 {
-	float jeden = (GridTool->Height-14)/7;
-        GridTool->ItemHeight = jeden;
-        GridTool->ItemWidth = jeden;
+    float jeden = (GridTool->Height-14)/7;
+    GridTool->Width = jeden +8;
+    GridTool->ItemHeight = jeden;
+    GridTool->ItemWidth = jeden;
 
-	float wjeden=(float)(GridMozaika->Width-columns)/(float)columns;
-	float hjeden=(float)(GridMozaika->Height-rows)/(float)rows;
-	///
-	GridMozaika->ItemHeight = hjeden;
-	GridMozaika->ItemWidth =  wjeden;
+    float wjeden=(float)(GridMozaika->Width-columns)/(float)columns;
+    float hjeden=(float)(GridMozaika->Height-rows)/(float)rows;
+    ///
+    GridMozaika->ItemHeight = hjeden;
+    GridMozaika->ItemWidth =  wjeden;
 
-	int tools_h = (PanelMain->Height/colors);
+    int tools_h = (PanelMain->Height/colors);
 
-	for(int i = 0; i <GridMozaika->ChildrenCount;i++)
-	{
-        TShape* sh = (TShape*)GridMozaika->Children->Items[i];
-        array->Add(sh);
+    for(int i = 0; i <GridMozaika->ChildrenCount;i++)
+    {
+    	TShape* sh = (TShape*)GridMozaika->Children->Items[i];
+	array->Add(sh);
     }
 
     tool_array->Add(RectangleWhite);

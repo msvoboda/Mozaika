@@ -29,7 +29,7 @@ object OptionForm: TOptionForm
     Position.X = 11.000000000000000000
     Position.Y = 8.000000000000000000
     Text = 'Name'
-    Width = 566.000000000000000000
+    Width = 962.000000000000000000
   end
   object EditName: TEdit
     Touch.InteractiveGestures = [LongTap, DoubleTap]
