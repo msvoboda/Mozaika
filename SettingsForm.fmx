@@ -15,12 +15,14 @@ object OptionForm: TOptionForm
   DesignerOrientation = 3
   DesignerOSVersion = ''
   object Button1: TButton
-    Height = 44.000000000000000000
-    Position.X = 472.000000000000000000
-    Position.Y = 288.000000000000000000
+    Anchors = [akTop, akRight]
+    Height = 30.000000000000000000
+    Position.X = 560.000000000000000000
+    Position.Y = 296.000000000000000000
+    StyleLookup = 'cleareditbutton'
     TabOrder = 4
     Text = 'Close'
-    Width = 121.000000000000000000
+    Width = 32.000000000000000000
     OnClick = Button1Click
   end
   object LabelName: TLabel
@@ -37,7 +39,7 @@ object OptionForm: TOptionForm
     Text = 'Picture'
     Position.X = 8.000000000000000000
     Position.Y = 32.000000000000000000
-    Width = 441.000000000000000000
+    Width = 537.000000000000000000
     Height = 32.000000000000000000
   end
   object ListBox: TListBox
@@ -45,37 +47,43 @@ object OptionForm: TOptionForm
     Position.X = 8.000000000000000000
     Position.Y = 72.000000000000000000
     TabOrder = 7
-    Width = 441.000000000000000000
+    Width = 537.000000000000000000
     DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
     DefaultItemStyles.GroupHeaderStyle = ''
     DefaultItemStyles.GroupFooterStyle = ''
   end
   object ButtonSave: TButton
-    Height = 44.000000000000000000
-    Position.X = 472.000000000000000000
+    Anchors = [akTop, akRight]
+    Height = 48.000000000000000000
+    Position.X = 544.000000000000000000
     Position.Y = 49.000000000000000000
+    StyleLookup = 'composetoolbutton'
     TabOrder = 2
     Text = 'Save'
-    Width = 121.000000000000000000
+    Width = 48.000000000000000000
     OnClick = ButtonSaveClick
   end
   object ButtonOpen: TButton
+    Anchors = [akTop, akRight]
     Enabled = False
-    Height = 44.000000000000000000
-    Position.X = 472.000000000000000000
+    Height = 48.000000000000000000
+    Position.X = 544.000000000000000000
     Position.Y = 7.000000000000000000
+    StyleLookup = 'organizetoolbutton'
     TabOrder = 1
     Text = 'Open'
-    Width = 121.000000000000000000
+    Width = 48.000000000000000000
     OnClick = ButtonOpenClick
   end
   object Button2: TButton
-    Height = 44.000000000000000000
-    Position.X = 472.000000000000000000
+    Anchors = [akTop, akRight]
+    Height = 48.000000000000000000
+    Position.X = 552.000000000000000000
     Position.Y = 239.000000000000000000
+    StyleLookup = 'deleteitembutton'
     TabOrder = 3
     Text = 'Delete'
-    Width = 121.000000000000000000
+    Width = 48.000000000000000000
     OnClick = Button2Click
   end
 end
