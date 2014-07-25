@@ -13,6 +13,7 @@
 #include <FMX.Ani.hpp>
 #include <FMX.Media.hpp>
 #include <FMX.ExtCtrls.hpp>
+#include <FMX.Advertising.hpp>
 //---------------------------------------------------------------------------
 class TMozaikaForm : public TForm
 {
@@ -162,12 +163,14 @@ __published:	// IDE-managed Components
 	TRectangle *Rectangle121;
 	TRectangle *Rectangle122;
 	TRectangle *Rectangle123;
+	TBannerAd *BannerAd;
 	void __fastcall FormShow(TObject *Sender);
 	void __fastcall RectangleRedClick(TObject *Sender);
 	void __fastcall Rectangle1Click(TObject *Sender);
 	void __fastcall ButtonNewClick(TObject *Sender);
 	void __fastcall ButtonSettingsClick(TObject *Sender);
 	void __fastcall Rectangle1MouseEnter(TObject *Sender);
+
 
 private:	// User declarations
 	TList *array;

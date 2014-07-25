@@ -1481,5 +1481,13 @@ object MozaikaForm: TMozaikaForm
       Width = 48.000000000000000000
       OnClick = ButtonNewClick
     end
+    object BannerAd: TBannerAd
+      AdSize = Small
+      Width = 253.000000000000000000
+      Height = 33.000000000000000000
+      Position.X = 248.000000000000000000
+      Position.Y = 6.000000000000000000
+      TestMode = True
+    end
   end
 end

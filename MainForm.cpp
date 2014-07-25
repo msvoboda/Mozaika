@@ -62,6 +62,8 @@ void TMozaikaForm::BuildGrid()
 void __fastcall TMozaikaForm::FormShow(TObject *Sender)
 {
   BuildGrid();
+  BannerAd->AdUnitID="ca-app-pub-1715143767192773/3280328968";
+  BannerAd->LoadAd();
 }
 //---------------------------------------------------------------------------
 
@@ -132,4 +134,5 @@ void __fastcall TMozaikaForm::Rectangle1MouseEnter(TObject *Sender)
         }
 }
 //---------------------------------------------------------------------------
+
 
